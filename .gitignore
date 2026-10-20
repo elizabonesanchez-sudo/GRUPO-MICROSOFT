@@ -1,0 +1,28 @@
+# Directories
+/writable/cache/*
+!/writable/cache/index.html
+!/writable/cache/.gitkeep
+/writable/logs/*
+!/writable/logs/index.html
+!/writable/logs/.gitkeep
+/writable/session/*
+!/writable/session/index.html
+!/writable/session/.gitkeep
+/writable/uploads/*
+!/writable/uploads/index.html
+!/writable/uploads/.gitkeep
+/writable/debugbar/*
+!/writable/debugbar/.gitkeep
+
+# Environment files
+.env.local
+.env.*.local
+
+# Composer
+/vendor/
+
+# System / OS
+.DS_Store
+Thumbs.db
+*.swp
+*~

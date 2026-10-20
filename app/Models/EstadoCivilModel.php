@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class EstadoCivilModel extends Model
+{
+    use NavigableTrait;
+
+    protected $table            = 'estadocivil';
+    protected $primaryKey       = 'idestadocivil';
+    protected $useAutoIncrement = true;
+    protected $returnType       = 'array';
+    protected $allowedFields    = ['nombre'];
+
+    protected $validationRules = [
+        'nombre' => 'required|min_length[2]|max_length[50]',
+    ];
+
+    protected $validationMessages = [
+        'nombre' => [
+            'required'   => 'El nombre del estado civil es obligatorio.',
+            'min_length' => 'Debe contener al menos 2 caracteres.',
+            'max_length' => 'No puede superar los 50 caracteres.',
+        ],
+    ];
+
+    /**
+     * Obtener listado con conteo de personas asociadas
+     */
+    public function getEstadosCivilesConConteo()
+    {
+        return $this->select('estadocivil.*, COUNT(persona.idpersona) AS total_personas')
+                    ->join('persona', 'persona.idestadocivil = estadocivil.idestadocivil', 'left')
+                    ->groupBy('estadocivil.idestadocivil')
+                    ->orderBy('estadocivil.idestadocivil', 'ASC')
+                    ->findAll();
+    }
+}
