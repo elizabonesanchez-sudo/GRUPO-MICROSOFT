@@ -114,7 +114,7 @@
                         <i class="bi bi-geo-alt-fill text-info me-2"></i>Direcciones Registradas (<?= count($direcciones) ?>)
                     </span>
                     <a href="<?= base_url('direccion/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-info text-white">
-                        <i class="bi bi-plus-circle me-1"></i> Agregar Dirección
+                        <i class="bi bi-plus-circle me-1"></i> Nuva direccion
                     </a>
                 </div>
                 <div class="card-body p-0">
