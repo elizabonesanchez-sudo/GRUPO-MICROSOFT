@@ -10,18 +10,21 @@
             </h5>
             <small class="text-muted">Total de registros encontrados: <?= esc($total) ?></small>
         </div>
-        <div class="d-flex gap-2">
+        <div class="d-flex gap-2 d-print-none">
             <a href="<?= base_url('persona/add') ?>" class="btn btn-primary btn-sm">
                 <i class="bi bi-person-plus-fill me-1"></i> Nueva Persona
             </a>
             <a href="<?= base_url('persona') ?>" class="btn btn-outline-secondary btn-sm">
-                <i class="bi bi-card-text me-1"></i> Ficha Registro
+                <i class="bi bi-card-text me-1"></i> Ficha Registro 
             </a>
+            <button type="button" class="btn btn-outline-dark btn-sm" onclick="window.print()">
+    <i class="bi bi-printer me-1"></i> Imprimir
+</button>
         </div>
     </div>
 
     <!-- Barra de Búsqueda -->
-    <div class="p-3 bg-light border-bottom">
+    <div class="p-3 bg-light border-bottom d-print-none">
         <form method="get" action="<?= base_url('persona/listar') ?>" class="row g-2 align-items-center">
             <div class="col-md-5">
                 <div class="input-group input-group-sm">
