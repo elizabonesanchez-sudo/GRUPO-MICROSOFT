@@ -105,7 +105,7 @@
                     <?php else: ?>
                         <tr>
                             <td colspan="6" class="text-center py-5 text-muted">
-                                No se encontraron correos electrónicos registrados.
+                                No hay correos registrados todavia  .
                             </td>
                         </tr>
                     <?php endif; ?>
