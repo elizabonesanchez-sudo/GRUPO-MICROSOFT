@@ -273,7 +273,7 @@
             <div class="d-flex align-items-center gap-3">
                 <div class="dropdown">
                     <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-plus-circle me-1"></i> Acceso Rápido
+                        <i class="bi bi-plus-circle me-1"></i> Crear Nuevo
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                         <li><a class="dropdown-item" href="<?= base_url('persona/add') ?>"><i class="bi bi-person-plus me-2 text-primary"></i>Nueva Persona</a></li>
