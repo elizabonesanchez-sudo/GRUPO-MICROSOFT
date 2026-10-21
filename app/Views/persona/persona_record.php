@@ -144,7 +144,7 @@
                                                     <a href="<?= base_url('direccion/actual/' . $dir['iddireccion']) ?>" class="btn btn-outline-secondary" title="Ver en Módulo">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
-                                                    <a href="<?= base_url('direccion/edit/' . $dir['iddireccion']) ?>" class="btn btn-outline-warning text-dark" title="Editar">
+                                                    <a href="<?= base_url('direccion/edit/' . $dir['iddireccion']) ?>" class="btn btn-outline-warning text-dark" title="Editar Persona">
                                                         <i class="bi bi-pencil"></i>
                                                     </a>
                                                     <a href="<?= base_url('direccion/delete/' . $dir['iddireccion'] . '?from_persona=1') ?>" class="btn btn-outline-danger" title="Eliminar"
