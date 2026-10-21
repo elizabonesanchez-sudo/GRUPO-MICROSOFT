@@ -32,7 +32,7 @@
                     <span class="fw-bold">
                         <i class="bi bi-person-vcard me-2"></i>Ficha de Persona #<?= esc($persona['idpersona']) ?>
                     </span>
-                    <span class="badge bg-light text-primary">Activo</span>
+                    <span class="badge bg-light text-primary">Registro activo</span>
                 </div>
                 <div class="card-body">
                     <div class="text-center mb-4 pb-3 border-bottom">
