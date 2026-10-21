@@ -25,7 +25,7 @@ $routes->group('persona', static function ($routes) {
     $routes->post('store', 'Persona::store');
     $routes->get('edit/(:num)', 'Persona::edit/$1');
     $routes->post('update/(:num)', 'Persona::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'Persona::delete/$1');
+    $routes->post('delete/(:num)', 'Persona::delete/$1');
 });
 
 // 2. Módulo Sexo
@@ -43,7 +43,7 @@ $routes->group('sexo', static function ($routes) {
     $routes->post('store', 'Sexo::store');
     $routes->get('edit/(:num)', 'Sexo::edit/$1');
     $routes->post('update/(:num)', 'Sexo::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'Sexo::delete/$1');
+    $routes->post('delete/(:num)', 'Sexo::delete/$1');
 });
 
 // 3. Módulo Estado Civil
@@ -61,7 +61,7 @@ $routes->group('estadocivil', static function ($routes) {
     $routes->post('store', 'EstadoCivil::store');
     $routes->get('edit/(:num)', 'EstadoCivil::edit/$1');
     $routes->post('update/(:num)', 'EstadoCivil::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'EstadoCivil::delete/$1');
+    $routes->post('delete/(:num)', 'EstadoCivil::delete/$1');
 });
 
 // 4. Módulo Dirección
@@ -80,7 +80,7 @@ $routes->group('direccion', static function ($routes) {
     $routes->post('store', 'Direccion::store');
     $routes->get('edit/(:num)', 'Direccion::edit/$1');
     $routes->post('update/(:num)', 'Direccion::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'Direccion::delete/$1');
+    $routes->post('delete/(:num)', 'Direccion::delete/$1');
 });
 
 // 5. Módulo Correo Electrónico
@@ -99,7 +99,7 @@ $routes->group('correoelectronico', static function ($routes) {
     $routes->post('store', 'CorreoElectronico::store');
     $routes->get('edit/(:num)', 'CorreoElectronico::edit/$1');
     $routes->post('update/(:num)', 'CorreoElectronico::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'CorreoElectronico::delete/$1');
+    $routes->post('delete/(:num)', 'CorreoElectronico::delete/$1');
 });
 
 // Alias '/correo' para Módulo Correo Electrónico
@@ -118,7 +118,7 @@ $routes->group('correo', static function ($routes) {
     $routes->post('store', 'Correo::store');
     $routes->get('edit/(:num)', 'Correo::edit/$1');
     $routes->post('update/(:num)', 'Correo::update/$1');
-    $routes->match(['get', 'post'], 'delete/(:num)', 'Correo::delete/$1');
+    $routes->post('delete/(:num)', 'Correo::delete/$1');
 });
 
 // --------------------------------------------------------------------
