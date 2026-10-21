@@ -256,7 +256,7 @@
 
         <div class="p-3 mt-auto border-top border-secondary border-opacity-25 text-center">
             <small class="text-muted d-block">CodeIgniter 4.5.1</small>
-            <span class="badge bg-success-subtle text-success mt-1">Conectado a MySQL</span>
+            <span class="badge bg-success-subtle text-success mt-1">Base de Datos conectada</span>
         </div>
     </aside>
 
