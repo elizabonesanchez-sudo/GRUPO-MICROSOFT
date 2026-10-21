@@ -239,7 +239,7 @@
                 </a>
             </li>
 
-            <li class="nav-header">Datos de Contacto</li>
+            <li class="nav-header">Informacion de Contactos</li>
             <li>
                 <a href="<?= base_url('direccion') ?>" class="nav-link <?= (isset($module) && $module === 'direccion') ? 'active' : '' ?>">
                     <i class="bi bi-geo-alt-fill"></i>
