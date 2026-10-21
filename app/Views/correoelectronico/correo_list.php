@@ -6,7 +6,7 @@
     <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
         <div>
             <h5 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-envelope-at-fill text-success me-2"></i>Listado General de Correos Electrónicos
+                <i class="bi bi-envelope-at-fill text-success me-2"></i> Correos Electrónicos
             </h5>
             <small class="text-muted">
                 Total de registros: <?= esc($total) ?>
