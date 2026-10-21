@@ -193,6 +193,9 @@
             font-size: 0.85rem;
             color: #64748b;
         }
+        @media print {
+    #sidebar, footer { display: none !important; }
+}
     </style>
 </head>
 <body>
