@@ -74,7 +74,7 @@ class PersonaModel extends Model
                                   (SELECT COUNT(*) FROM correoelectronico c WHERE c.idpersona = persona.idpersona) AS total_correos')
                         ->join('sexo', 'sexo.idsexo = persona.idsexo', 'left')
                         ->join('estadocivil', 'estadocivil.idestadocivil = persona.idestadocivil', 'left')
-                        ->orderBy('persona.idpersona', 'DESC');
+                        ->orderBy('persona.apellidos', 'ASC')->orderBy('persona.nombres', 'ASC');
 
         if (!empty($search)) {
             $builder->groupStart()
