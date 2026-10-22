@@ -161,6 +161,33 @@ class CreatePersonaTables extends Migration
         $this->forge->addKey('idpersona');
         $this->forge->addForeignKey('idpersona', 'persona', 'idpersona', 'CASCADE', 'CASCADE');
         $this->forge->createTable('correoelectronico', true);
+        
+        // 6. Crear tabla clientes
+$this->forge->addField([
+    'idcliente' => [
+        'type'           => 'INT',
+        'constraint'     => 11,
+        'unsigned'       => true,
+        'auto_increment' => true,
+    ],
+    'nombre' => [
+        'type'       => 'VARCHAR',
+        'constraint' => 100,
+        'null'       => false,
+    ],
+    'correo' => [
+        'type'       => 'VARCHAR',
+        'constraint' => 100,
+        'null'       => true,
+    ],
+    'created_at' => [
+        'type' => 'DATETIME',
+        'null' => true,
+    ],
+]);
+
+$this->forge->addKey('idcliente', true);
+$this->forge->createTable('clientes');
 
         // Vista de compatibilidad para consultas directas sobre 'correo'
         $this->db->query("CREATE OR REPLACE VIEW correo AS 

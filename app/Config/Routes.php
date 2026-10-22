@@ -26,6 +26,7 @@ $routes->group('persona', static function ($routes) {
     $routes->get('edit/(:num)', 'Persona::edit/$1');
     $routes->post('update/(:num)', 'Persona::update/$1');
     $routes->post('delete/(:num)', 'Persona::delete/$1');
+    $routes->get('clientes', 'Cliente::index');
 });
 
 // 2. Módulo Sexo
